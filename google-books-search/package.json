@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "bootstrap-4-react": "0.0.59",
     "express": "^4.17.1",
+    "materialize-css": "^1.0.0",
     "mongoose": "^5.9.28",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
