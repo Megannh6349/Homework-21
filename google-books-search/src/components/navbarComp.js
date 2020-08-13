@@ -9,6 +9,7 @@ class NavbarComp extends React.Component {
                     className="green lighten-1"
                     alignLinks="right"
                     brand={<a className="brand-logo" href="/">Google Books</a>}
+                    centerLogo
                     id="mobile-nav"
                     menuIcon={<Icon>menu</Icon>}
                     options={{
