@@ -1,8 +1,12 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Saved from './Saved';
+
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -10,6 +14,18 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+const routing = (
+  <BrowserRouter>
+  <Switch>
+      <Route exact path="/" component={App} />
+      <Route path="/saved" component={Saved} />
+  </Switch>
+</BrowserRouter>
+)
+
+ReactDOM.render(routing, document.getElementById('root'));
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
